@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* color */
+  --color-blue: rgba(74, 105, 226, 1);
+  --color-yellow: rgba(255, 165, 47, 1);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-fa-white: rgba(250, 250, 250, 1);
+  --color-grey: rgba(231, 231, 227, 1);
+  --color-grey-main: rgba(112, 112, 110, 1);
+  --color-dark-grey: rgba(35, 35, 33, 1);
+
+  /* font */
+  --font-rubik: "Rubik", sans-serif;
+  --font-openSans: "Open Sans", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+.head {
+  margin-bottom: 8px;
+}
+.category-toggle {
+  width: 219px;
+  height: 52px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--color-fa-white);
+  font-family: var(--font-openSans);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.07px;
+}
+.category-toggle:hover {
+  border: 2px solid var(--color-dark-grey);
+}
+.change-status .dropdown-item {
+  font-family: var(--font-openSans);
+  font-size: 15px;
+  font-weight: 500;
+}
+.change-status .dropdown-menu.show {
+  /* display: block;
+  position: absolute !important; */
+  left: auto !important;
+  right: 0 !important;
+}
+.change-status .dropdown-menu {
+  width: fit-content;
+}

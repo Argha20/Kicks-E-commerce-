@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* color */
+  --color-blue: rgba(74, 105, 226, 1);
+  --color-yellow: rgba(255, 165, 47, 1);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-fa-white: rgba(250, 250, 250, 1);
+  --color-grey: rgba(231, 231, 227, 1);
+  --color-grey-main: rgba(112, 112, 110, 1);
+  --color-dark-grey: rgba(35, 35, 33, 1);
+
+  /* font */
+  --font-rubik: "Rubik", sans-serif;
+  --font-openSans: "Open Sans", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 644px;
+    justify-content: center;
+  }
+  .email-container {
+    margin-top: 24px;
+  }
+  .email-logo {
+    margin-top: 20px;
+    align-self: baseline;
+    padding-left: 18px;
+  }
+  .email-container {
+    padding: 12px;
+  }
+  .email-container h2 {
+    font-size: 28px;
+    line-height: 27.92px;
+  }
+}

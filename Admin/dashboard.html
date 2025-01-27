@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - dashboard</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/sport.png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/dahsboard.css" />
+
+    <!-- Fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <div class="d-flex p-0 m-0">
+        <!-- sidebar for navigation -->
+        <div class="p-0">
+          <aside class="side-menu d-flex flex-column align-items-center">
+            <a class="navbar-brand" href="#">
+              <img src="./assets/images/Logo.png" alt="logo" />
+            </a>
+            <div class="d-flex align-items-start">
+              <div
+                class="nav flex-column nav-pills gap-2 align-items-center"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <a
+                  class="nav-link active"
+                  href="dashboard.html"
+                  id="v-pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-home"
+                  aria-selected="true"
+                >
+                  <i class="fa-solid fa-table-list pe-2"></i> Dashboard
+                </a>
+                <a
+                  class="nav-link"
+                  href="all-products.html"
+                  id="v-pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false"
+                >
+                  <i class="fa-solid fa-table-cells-large pe-2"></i>All products
+                </a>
+                <a
+                  class="nav-link"
+                  href="order-list.html"
+                  id="v-pills-settings-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                >
+                  <i class="fa-solid fa-file-lines pe-2"></i>Order list
+                </a>
+              </div>
+            </div>
+            <!-- category filter -->
+            <div class="category-filter my-5">
+              <div class="cate-head">
+                <h5>Categories</h5>
+                <div class="icon"><i class="fa-solid fa-angle-up"></i></div>
+              </div>
+              <div class="cate-body">
+                <div
+                  class="category-each d-flex justify-content-between align-items-center mt-3"
+                >
+                  <a class="category-item" href="">Sneakers</a>
+                  <a class="number-item" href="">21</a>
+                </div>
+
+                <div
+                  class="category-each d-flex justify-content-between align-items-center mt-3"
+                >
+                  <a class="category-item" href="">Runners</a>
+                  <a class="number-item" href="">32</a>
+                </div>
+
+                <div
+                  class="category-each d-flex justify-content-between align-items-center mt-3"
+                >
+                  <a class="category-item" href="">Golf</a>
+                  <a class="number-item" href="">13</a>
+                </div>
+
+                <div
+                  class="category-each d-flex justify-content-between align-items-center mt-3"
+                >
+                  <a class="category-item" href="">Hiking</a>
+                  <a class="number-item" href="">14</a>
+                </div>
+
+                <div
+                  class="category-each d-flex justify-content-between align-items-center mt-3"
+                >
+                  <a class="category-item" href="">Football</a>
+                  <a class="number-item" href="">6</a>
+                </div>
+
+                <div
+                  class="category-each d-flex justify-content-between align-items-center mt-3"
+                >
+                  <a class="category-item" href="">Baseball</a>
+                  <a class="number-item" href="">11</a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <!-- sidebar for navigation end -->
+        <div class="right-section">
+          <!-- top navigation -->
+          <nav class="navbar admin-nav">
+            <ul
+              class="navbar-nav d-flex flex-row ms-auto gap-4"
+              id="navbarSupportedContent"
+            >
+              <li class="nav-item">
+                <a class="nav-link">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""><i class="fa-solid fa-bell"></i></a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle role-button btn d-flex justify-content-evenly"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Admin
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-custom">
+                    <li>
+                      <a
+                        class="dropdown-item d-flex justify-content-between"
+                        href="#"
+                        >CHANGE PASSWORD <i class="fa-solid fa-angle-right"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item d-flex justify-content-between"
+                        href="#"
+                        >LOG OUT
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <!-- top navigation end -->
+
+          <!-- cards section -->
+          <section class="dashboard-body">
+            <!-- heading -->
+            <div class="head d-flex justify-content-between">
+              <h4 class="dashboard-heading">Dashboard</h4>
+
+              <p class="date">
+                <i class="fa-solid fa-calendar-days pe-1"></i>
+                <span>04/03/2020</span> - <span>13/12/2024</span>
+              </p>
+            </div>
+            <!-- heading end -->
+
+            <!-- Cards -->
+            <div class="top-cards d-flex gap-3">
+              <!-- card -->
+              <div class="top-card">
+                <div class="d-flex justify-content-between">
+                  <p class="card-info">Total Oders</p>
+                  <p class="card-info">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </p>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex justify-content-between gap-lg-2">
+                    <div class="img-box">
+                      <img src="./assets/images/bag_handle.png" alt="" />
+                    </div>
+                    <h6 class="sold-amount">$126.500</h6>
+                  </div>
+                  <div class="text-end">
+                    <p class="percentage">
+                      <i class="fa-solid fa-arrow-up pe-2"></i>34.7%
+                    </p>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-end mt-1">
+                  <p class="bottom-text">Compared to Jan 2022</p>
+                </div>
+              </div>
+              <!-- card end -->
+              <!-- card -->
+              <div class="top-card">
+                <div class="d-flex justify-content-between">
+                  <p class="card-info">Active Orders</p>
+                  <p class="card-info">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </p>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex justify-content-between gap-lg-2">
+                    <div class="img-box">
+                      <img src="./assets/images/bag_handle.png" alt="" />
+                    </div>
+                    <h6 class="sold-amount">$126.500</h6>
+                  </div>
+                  <div class="text-end">
+                    <p class="percentage">
+                      <i class="fa-solid fa-arrow-up pe-2"></i>34.7%
+                    </p>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-end mt-1">
+                  <p class="bottom-text">Compared to Jan 2022</p>
+                </div>
+              </div>
+              <!-- card end -->
+              <!-- card -->
+              <div class="top-card">
+                <div class="d-flex justify-content-between">
+                  <p class="card-info">Shipped Orders</p>
+                  <p class="card-info">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </p>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex justify-content-between gap-lg-2">
+                    <div class="img-box">
+                      <img src="./assets/images/bag_handle.png" alt="" />
+                    </div>
+                    <h6 class="sold-amount">$126.500</h6>
+                  </div>
+                  <div class="text-end">
+                    <p class="percentage">
+                      <i class="fa-solid fa-arrow-up pe-2"></i>34.7%
+                    </p>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-end mt-1">
+                  <p class="bottom-text">Compared to Jan 2022</p>
+                </div>
+              </div>
+              <!-- card end -->
+            </div>
+            <!-- Cards end -->
+            <!-- high chart js -->
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/export-data.js"></script>
+            <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+            <div class="middle-cards mt-4 d-flex justify-content-between">
+              <!-- Sales Graph -->
+              <div class="graph">
+                <figure class="highcharts-figure p-0">
+                  <div id="container"></div>
+                </figure>
+              </div>
+              <!-- Best Seller -->
+              <div class="best-seller">
+                <div class="card-head d-flex justify-content-between pb-3">
+                  <h6 class="mb-0">Best Sellers</h6>
+                  <div class="card-info fs-6 text-muted mt-1">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <!-- Best seller cards -->
+                <div class="best-seller-info d-flex align-items-center mt-3">
+                  <img
+                    class="best-seller-img"
+                    src="./assets/images/newDraop1.png"
+                    alt=""
+                  />
+                  <div class="ms-3">
+                    <p class="product-name mb-1">Adidas Ultra boost</p>
+                    <p class="product-category">Running</p>
+                  </div>
+                  <div class="ms-auto">
+                    <p class="product-price mb-1">$126.50</p>
+                    <p class="sales-number">999 sales</p>
+                  </div>
+                </div>
+
+                <div class="best-seller-info d-flex align-items-center mt-3">
+                  <img
+                    class="best-seller-img"
+                    src="./assets/images/newDraop2.png"
+                    alt=""
+                  />
+                  <div class="ms-3">
+                    <p class="product-name mb-1">Adidas Ultra boost</p>
+                    <p class="product-category">Running</p>
+                  </div>
+                  <div class="ms-auto">
+                    <p class="product-price mb-1">$126.50</p>
+                    <p class="sales-number">999 sales</p>
+                  </div>
+                </div>
+
+                <div class="best-seller-info d-flex align-items-center mt-3">
+                  <img
+                    class="best-seller-img"
+                    src="./assets/images/list-img-6.png"
+                    alt=""
+                  />
+                  <div class="ms-3">
+                    <p class="product-name mb-1">Adidas Ultra boost</p>
+                    <p class="product-category">Running</p>
+                  </div>
+                  <div class="ms-auto">
+                    <p class="product-price mb-1">$126.50</p>
+                    <p class="sales-number">999 sales</p>
+                  </div>
+                </div>
+
+                <button class="btn report-button mt-4">REPORT</button>
+              </div>
+            </div>
+            <!-- Recent Orders -->
+            <div class="recent-orders">
+              <div class="table-head d-flex justify-content-between pb-3">
+                <h4 class="mb-0 table-about">Recent Orders</h4>
+                <div class="card-info fs-5 mt-1 text-muted">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <!-- table -->
+              <table class="table">
+                <!-- Table head -->
+                <thead>
+                  <tr class="pt-5">
+                    <th scope="col">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Product
+                        </label>
+                      </div>
+                    </th>
+                    <th scope="col">Order ID</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Amount</th>
+                  </tr>
+                </thead>
+
+                <!-- Table Body -->
+                <tbody>
+                  <tr>
+                    <td scope="row">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Adidas Ultra boost
+                        </label>
+                      </div>
+                    </td>
+                    <td>#25426</td>
+                    <td>Jan 8th,2022</td>
+                    <td>Leo Gouse</td>
+                    <td class="delivered">Delivered</td>
+                    <td>$200.00</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Adidas Ultra boost
+                        </label>
+                      </div>
+                    </td>
+                    <td>#25425</td>
+                    <td>Jan 7th,2022</td>
+                    <td>Jaxson Korsgaard</td>
+                    <td class="canceled">Canceled</td>
+                    <td>$200.00</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Adidas Ultra boost
+                        </label>
+                      </div>
+                    </td>
+                    <td>#25424</td>
+                    <td>Jan 6th,2022</td>
+                    <td>Talan Botosh</td>
+                    <td class="delivered">Delivered</td>
+                    <td>$200.00</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Adidas Ultra boost
+                        </label>
+                      </div>
+                    </td>
+                    <td>#25424</td>
+                    <td>Jan 6th,2022</td>
+                    <td>Talan Botosh</td>
+                    <td class="canceled">Delivered</td>
+                    <td>$200.00</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Adidas Ultra boost
+                        </label>
+                      </div>
+                    </td>
+                    <td>#25424</td>
+                    <td>Jan 6th,2022</td>
+                    <td>Talan Botosh</td>
+                    <td class="delivered">Delivered</td>
+                    <td>$200.00</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Adidas Ultra boost
+                        </label>
+                      </div>
+                    </td>
+                    <td>#25424</td>
+                    <td>Jan 6th,2022</td>
+                    <td>Talan Botosh</td>
+                    <td class="canceled">Delivered</td>
+                    <td>$200.00</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Adidas Ultra boost
+                        </label>
+                      </div>
+                    </td>
+                    <td>#25424</td>
+                    <td>Jan 6th,2022</td>
+                    <td>Talan Botosh</td>
+                    <td class="delivered">Delivered</td>
+                    <td>$200.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <!-- cards section end -->
+
+          <!-- footer -->
+          <footer class="d-flex justify-content-between admin-footer">
+            <p>© 2024 - kicks Dashboard</p>
+            <div class="d-flex gap-3">
+              <a href="">About</a>
+              <a href="">Careers</a>
+              <a href="">Policy</a>
+              <a href="">Contact</a>
+            </div>
+          </footer>
+          <!-- footer end -->
+        </div>
+      </div>
+    </div>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

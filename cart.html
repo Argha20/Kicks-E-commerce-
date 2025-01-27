@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KICKS - cart</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/sport.png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/product.css" />
+    <link rel="stylesheet" href="./assets/css/cart.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/proreponsive.css" />
+    <link rel="stylesheet" href="./assets/css/cart-responsive.css" />
+
+    <!-- Fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="container-xxl">
+      <nav class="navbar navbar-expand-lg justify-content-between">
+        <div class="container-fluid d-block d-lg-flex">
+          <div class="d-flex align-items-center justify-content-between">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand d-lg-none d-block m-0" href="#">
+              <img src="./assets/images/navBrand.png" alt="Bootstrap" />
+            </a>
+            <div class="d-flex gap-3 d-block d-lg-none">
+              <a class="nav-link" aria-current="page" href="#"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- navlinks -->
+            <ul
+              class="navbar-nav d-flex align-items-center mt-2 mt-md-4 mt-lg-0 gap-md-4"
+            >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >New Drops 🔥</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Men</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Spots</a></li>
+                  <li><a class="dropdown-item" href="#">Casual</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Formal</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Women</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sports</a></li>
+                  <li><a class="dropdown-item" href="#">Casual</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Formal</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item d-block d-lg-none">
+                <a class="nav-link" aria-current="page" href="#">Cart</a>
+              </li>
+            </ul>
+          </div>
+
+          <a class="navbar-brand d-none d-lg-block" href="#">
+            <img src="./assets/images/navBrand.png" alt="Bootstrap" />
+          </a>
+
+          <!-- icons -->
+          <div
+            class="collapse navbar-collapse d-none d-lg-block"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ms-auto gap-4 d-flex align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-user"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link cart" href="#">0</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navigation end -->
+
+    <!-- Banner-->
+    <section class="cart-banner">
+      <div class="container-xxl">
+        <div class="row g-0">
+          <div class="col-xl-8 col-lg-9">
+            <div class="bag">
+              <!-- bag heading -->
+              <div class="bag-head mb-0 mb-md-4">
+                <h6 class="bag-heading">Your Bag</h6>
+                <p class="bag-para">
+                  Items in your bag not reserved- check out now to make them
+                  yours.
+                </p>
+              </div>
+
+              <div class="items">
+                <!-- item cards -->
+                <div class="item-card d-flex gap-3 gap-md-4">
+                  <img src="./assets/images/newDraop1.png" alt="" />
+                  <div class="d-flex flex-wrap w-100 justify-content-between">
+                    <div>
+                      <h6 class="shoe-des-head">DROPSET TRAINER SHOES</h6>
+                      <p class="shoe-des-para">Men’s Road Running Shoes</p>
+                      <p class="shoe-des-para">Enamel Blue/ University White</p>
+                      <div class="d-flex gap-3 gap-md-5 mt-2 mt-md-3">
+                        <p class="shoe-des-para">
+                          Size 10
+                          <i
+                            class="d-none d-md-inline fa-solid fa-angle-down"
+                          ></i>
+                        </p>
+                        <p class="shoe-des-para">
+                          Quantity 1
+                          <i
+                            class="d-none d-md-inline fa-solid fa-angle-down"
+                          ></i>
+                        </p>
+                      </div>
+                      <div class="cart-icons d-none d-md-flex gap-4 fs-4">
+                        <i class="cart-icon fa-regular fa-heart"></i>
+                        <i class="cart-icon fa-regular fa-trash-can"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="item-price">$130.00</p>
+                      <div class="cart-icons d-flex d-md-none mt-2 gap-3">
+                        <i class="cart-icon fa-regular fa-heart"></i>
+                        <i class="cart-icon fa-regular fa-trash-can"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- item cards -->
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg-3 d-flex mt-4 mt-lg-0 flex-column justify-content-center"
+          >
+            <div class="order-summary">
+              <h6 class="bag-heading mb-4">Order Summary</h6>
+              <div class="d-flex justify-content-between">
+                <p class="order-info-key">1 ITEM</p>
+                <p class="order-info-value">$130.00</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="order-info-key">Delivery</p>
+                <p class="order-info-value">$6.99</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="order-info-key">Sales Tax</p>
+                <p class="order-info-value">-</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="total-key">Total</p>
+                <p class="total-value">$136.99</p>
+              </div>
+              <button class="checkout-button btn mt-2">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner end -->
+
+    <!-- You may like -->
+    <section class="new-drops">
+      <div class="container-xxl">
+        <div
+          class="new-head d-flex justify-content-between justify-content-md-around justify-content-lg-between align-items-center"
+        >
+          <div>
+            <h2 class="product">You may also like</h2>
+          </div>
+          <div class="gap-4">
+            <a class="me-2" href=""><i class="fa-solid fa-angle-left"></i></a>
+            <a href=""><i class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Cards -->
+
+        <div
+          class="shop-cards mt-4 mt-md-0 d-flex gap-3 flex-wrap justify-content-between justify-content-md-evenly justify-content-lg-center"
+        >
+          <!-- Card -->
+
+          <div class="shop-card">
+            <div class="img-box">
+              <img
+                class="newDraop img-fluid"
+                src="./assets/images/newDraop1.png"
+                alt="newDraop"
+              />
+              <p class="img-tag">New</p>
+            </div>
+            <h5>ADIDAS 4DFWD X PARLEY RUNNING SHOES</h5>
+            <button class="btn">
+              View Product - <span class="btn-price">$125</span>
+            </button>
+          </div>
+
+          <!-- Card end -->
+          <!-- Card -->
+
+          <div class="shop-card">
+            <div class="img-box">
+              <img
+                class="newDraop img-fluid"
+                src="./assets/images/newDraop2.png"
+                alt="newDraop"
+              />
+              <p class="img-tag">New</p>
+            </div>
+            <h5>ADIDAS 4DFWD X PARLEY RUNNING SHOES</h5>
+            <button class="btn">
+              View Product - <span class="btn-price">$125</span>
+            </button>
+          </div>
+
+          <!-- Card end -->
+          <!-- Card -->
+
+          <div class="shop-card">
+            <div class="img-box">
+              <img
+                class="newDraop img-fluid"
+                src="./assets/images/newDraop3.png"
+                alt="newDraop"
+              />
+              <p class="img-tag-discount">20% off</p>
+            </div>
+            <h5>ADIDAS 4DFWD X PARLEY RUNNING SHOES</h5>
+            <button class="btn">
+              View Product - <span class="btn-price">$125</span>
+            </button>
+          </div>
+
+          <!-- Card end -->
+          <!-- Card -->
+
+          <div class="shop-card">
+            <div class="img-box">
+              <img
+                class="newDraop img-fluid"
+                src="./assets/images/newDraop4.png"
+                alt="newDraop"
+              />
+              <p class="img-tag">New</p>
+            </div>
+            <h5>ADIDAS 4DFWD X PARLEY RUNNING SHOES</h5>
+            <button class="btn">
+              View Product - <span class="btn-price">$125</span>
+            </button>
+          </div>
+
+          <!-- Card end -->
+        </div>
+
+        <!-- Cards -->
+      </div>
+    </section>
+    <!-- You may like end -->
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="container-xxl footer-background">
+        <!-- Footer top -->
+        <div class="foot-top">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-6 d-flex flex-column ps-2 ps-md-5 text-left">
+              <div class="foot-top-text">
+                <h3>
+                  Join our KicksPlus <br />
+                  Club & get 15%
+                </h3>
+                <p>Sign up for free! Join the community.</p>
+                <form class="d-flex footer-form gap-2" action="">
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Email address"
+                  />
+                  <button class="btn">SUBMIT</button>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="foot-add">
+                <img
+                  class="img-fluid foot-add-img"
+                  src="./assets/images/footerFormImage.png"
+                  alt="logo"
+                />
+                <a class="plus-icon" href=""
+                  ><i class="fa-solid fa-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer bottom -->
+        <div class="footer-bottom">
+          <div
+            class="foot-bottom-content d-flex flex-column flex-md-row justify-content-between"
+          >
+            <div class="">
+              <h4>About us</h4>
+              <p>
+                We are the biggest hyperstore in the universe. We got you all
+                cover with our exclusive collections and latest drops.
+              </p>
+            </div>
+            <div class="foot-category">
+              <h5>Categories</h5>
+              <ul class="footer-links">
+                <li class="foot-item">
+                  <a class="foot-link" href="">Runners</a>
+                </li>
+                <li class="foot-item">
+                  <a class="foot-link" href="">Sneakers</a>
+                </li>
+                <li class="foot-item">
+                  <a class="foot-link" href="">Basketball</a>
+                </li>
+                <li class="foot-item">
+                  <a class="foot-link" href="">Outdoor</a>
+                </li>
+                <li class="foot-item"><a class="foot-link" href="">Golf</a></li>
+                <li class="foot-item">
+                  <a class="foot-link" href="">Hiking</a>
+                </li>
+              </ul>
+            </div>
+            <div class="foot-about">
+              <h5>Company</h5>
+              <ul class="footer-links">
+                <li class="foot-item">
+                  <a class="foot-link" href="">About</a>
+                </li>
+                <li class="foot-item">
+                  <a class="foot-link" href="">Contact</a>
+                </li>
+                <li class="foot-item">
+                  <a class="foot-link" href="">Blogs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="foot-follow">
+              <h5>Follow us</h5>
+              <div class="d-flex gap-3">
+                <a class="foot-link" href=""
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a class="foot-link" href=""
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a class="foot-link" href=""
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- foot main image -->
+          <div class="d-flex justify-content-center mt-0 mt-md-4">
+            <img
+              class="footer-main-img img-fluid"
+              src="./assets/images/footerImage.png"
+              alt="footer-img"
+            />
+          </div>
+        </div>
+
+        <!-- footer bottom end -->
+        <div class="copyright">
+          <p>
+            © All rights reserved | Made with ❤️ by <span> Arghadeep Roy</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

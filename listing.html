@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KICKS - listing</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/sport.png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/product.css" />
+    <link rel="stylesheet" href="./assets/css/listing.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/listingresponsive.css" />
+
+    <!-- Fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <div class="container-xxl">
+      <nav class="navbar navbar-expand-lg justify-content-between">
+        <div class="container-fluid d-block d-lg-flex">
+          <div class="d-flex align-items-center justify-content-between">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand d-lg-none d-block m-0" href="#">
+              <img src="./assets/images/navBrand.png" alt="Bootstrap" />
+            </a>
+            <div class="d-flex gap-3 d-block d-lg-none">
+              <a class="nav-link" aria-current="page" href="#"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- navlinks -->
+            <ul
+              class="navbar-nav d-flex align-items-center mt-2 mt-md-4 mt-lg-0 gap-md-4"
+            >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >New Drops 🔥</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Men</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Spots</a></li>
+                  <li><a class="dropdown-item" href="#">Casual</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Formal</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Women</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sports</a></li>
+                  <li><a class="dropdown-item" href="#">Casual</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Formal</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item d-block d-lg-none">
+                <a class="nav-link" aria-current="page" href="#">Cart</a>
+              </li>
+            </ul>
+          </div>
+
+          <a class="navbar-brand d-none d-lg-block" href="#">
+            <img src="./assets/images/navBrand.png" alt="Bootstrap" />
+          </a>
+
+          <!-- icons -->
+          <div
+            class="collapse navbar-collapse d-none d-lg-block"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ms-auto gap-4 d-flex align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-user"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link cart" href="#">0</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Navigation end -->
+
+    <!-- Banner -->
+    <section class="listing-banner">
+      <div class="container-xxl">
+        <div
+          class="listing-main d-flex flex-column justify-content-end justify-content-md-center pb-4 pb-md-0"
+        >
+          <div class="ps-3 ps-md-5">
+            <p class="top-text">Limited time only</p>
+            <h1 class="discount-text">Get 30% off</h1>
+            <p class="bottom-text">
+              Sneakers made with your comfort in mind so you can put all of your
+              focus into your next session.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner end -->
+
+    <!-- New Drops -->
+    <section class="new-drops">
+      <div class="container-xxl">
+        <!-- for mobile only -->
+        <div
+          class="d-flex justify-content-between justify-content-md-evenly d-lg-none"
+        >
+          <div
+            class="trending-box d-flex justify-content-center align-items-center"
+          >
+            Filters
+            <a
+              class="ps-4"
+              href=""
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#filterModal"
+              ><i class="fa-solid fa-bars"></i
+            ></a>
+          </div>
+          <div
+            class="trending-box d-flex justify-content-center align-items-center"
+          >
+            Trending
+            <a class="ps-4" href=""><i class="fa-solid fa-chevron-down"></i></a>
+          </div>
+        </div>
+        <!-- mobile view modal -->
+        <div class="filter-mobile">
+          <div
+            class="modal fade"
+            id="filterModal"
+            tabindex="-1"
+            aria-labelledby="filterModal"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h6 class="modal-title filter-head" id="filterModalLabel">
+                    Filters
+                  </h6>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <aside class="listing-side-pannel">
+                    <!-- Refined by -->
+                    <div class="d-flex justify-content-between">
+                      <h6 class="refined-by">Refine by</h6>
+                      <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+                    <!-- selected category -->
+                    <div class="d-flex gap-2 mt-3">
+                      <div class="selected-filter">Mens</div>
+                      <div class="selected-filter">Casual</div>
+                    </div>
+
+                    <!-- size -->
+                    <div class="size my-4">
+                      <div class="d-flex justify-content-between">
+                        <h6 class="refined-by">SIZE</h6>
+                        <i class="fa-solid fa-angle-up"></i>
+                      </div>
+                      <div class="size-container-in-listing mt-3">
+                        <div
+                          class="size-num selected d-flex justify-content-center align-items-center"
+                        >
+                          38
+                        </div>
+                        <div
+                          class="size-num unavailable d-flex justify-content-center align-items-center"
+                        >
+                          39
+                        </div>
+                        <div
+                          class="size-num unavailable d-flex justify-content-center align-items-center"
+                        >
+                          40
+                        </div>
+                        <div
+                          class="size-num d-flex justify-content-center align-items-center"
+                        >
+                          41
+                        </div>
+                        <div
+                          class="size-num d-flex justify-content-center align-items-center"
+                        >
+                          42
+                        </div>
+                        <div
+                          class="size-num d-flex justify-content-center align-items-center"
+                        >
+                          43
+                        </div>
+                        <div
+                          class="size-num d-flex justify-content-center align-items-center"
+                        >
+                          44
+                        </div>
+                        <div
+                          class="size-num d-flex justify-content-center align-items-center"
+                        >
+                          45
+                        </div>
+                        <div
+                          class="size-num d-flex justify-content-center align-items-center"
+                        >
+                          46
+                        </div>
+                        <div
+                          class="size-num d-flex justify-content-center align-items-center"
+                        >
+                          47
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- category -->
+                    <div class="category-in-listing mt-4">
+                      <div class="d-flex justify-content-between">
+                        <h6 class="refined-by">CATEGORY</h6>
+                        <i class="fa-solid fa-angle-up"></i>
+                      </div>
+                      <div class="mt-3 d-flex flex-column gap-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label checkbox-label"
+                            for="flexCheckDefault"
+                          >
+                            Casual shoes
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label checkbox-label"
+                            for="flexCheckDefault"
+                          >
+                            Runners
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label checkbox-label"
+                            for="flexCheckDefault"
+                          >
+                            Hiking
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label checkbox-label"
+                            for="flexCheckDefault"
+                          >
+                            Sneaker
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label checkbox-label"
+                            for="flexCheckDefault"
+                          >
+                            Basketball
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label checkbox-label"
+                            for="flexCheckDefault"
+                          >
+                            Golf
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label checkbox-label"
+                            for="flexCheckDefault"
+                          >
+                            Outdoor
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- gender -->
+                    <div class="category-in-listing mt-4">
+                      <div class="d-flex justify-content-between">
+                        <h6 class="refined-by">GENDER</h6>
+                        <i class="fa-solid fa-angle-up"></i>
+                      </div>
+                      <div class="mt-3 d-flex flex-column gap-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label checkbox-label"
+                            for="flexCheckDefault"
+                          >
+                            Men
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label checkbox-label"
+                            for="flexCheckDefault"
+                          >
+                            Women
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Price -->
+                    <div class="price-listing mt-4">
+                      <div class="d-flex justify-content-between">
+                        <h6 class="refined-by">PRICE</h6>
+                        <i class="fa-solid fa-angle-up"></i>
+                      </div>
+                      <div class="range-toggler mt-3">
+                        <input
+                          type="range"
+                          class="form-range"
+                          min="0"
+                          max="1000"
+                          step="25"
+                          id="customRange3"
+                        />
+                        <div
+                          class="value-labels d-flex justify-content-between"
+                        >
+                          <span>$0</span>
+                          <span>$1000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn modal-button">RESET</button>
+                  <button type="submit" class="btn modal-button">APPLY</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- for mobile only end -->
+
+        <div class="d-flex justify-content-between mt-4 mt-lg-0">
+          <div class="ps-1 ps-md-4 ps-lg-0">
+            <h2 class="life-style-head">Life Style Shoes</h2>
+            <p class="items-count">122 items</p>
+          </div>
+          <div
+            class="trending-box justify-content-center align-items-center d-none d-lg-flex"
+          >
+            Trending
+            <a class="ps-4" href=""><i class="fa-solid fa-chevron-down"></i></a>
+          </div>
+        </div>
+        <div class="row mt-0 mt-lg-4">
+          <div class="col-lg-3 d-none d-lg-flex">
+            <aside class="listing-side-pannel">
+              <h6 class="filter-head">Filters</h6>
+
+              <!-- Refined by -->
+              <div class="d-flex justify-content-between">
+                <h6 class="refined-by">Refine by</h6>
+                <i class="fa-solid fa-angle-up"></i>
+              </div>
+
+              <!-- selected category -->
+              <div class="d-flex gap-2 mt-3">
+                <div class="selected-filter">Mens</div>
+                <div class="selected-filter">Casual</div>
+              </div>
+
+              <!-- size -->
+              <div class="size my-4">
+                <div class="d-flex justify-content-between">
+                  <h6 class="refined-by">SIZE</h6>
+                  <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="size-container-in-listing mt-3">
+                  <div
+                    class="size-num selected d-flex justify-content-center align-items-center"
+                  >
+                    38
+                  </div>
+                  <div
+                    class="size-num unavailable d-flex justify-content-center align-items-center"
+                  >
+                    39
+                  </div>
+                  <div
+                    class="size-num unavailable d-flex justify-content-center align-items-center"
+                  >
+                    40
+                  </div>
+                  <div
+                    class="size-num d-flex justify-content-center align-items-center"
+                  >
+                    41
+                  </div>
+                  <div
+                    class="size-num d-flex justify-content-center align-items-center"
+                  >
+                    42
+                  </div>
+                  <div
+                    class="size-num d-flex justify-content-center align-items-center"
+                  >
+                    43
+                  </div>
+                  <div
+                    class="size-num d-flex justify-content-center align-items-center"
+                  >
+                    44
+                  </div>
+                  <div
+                    class="size-num d-flex justify-content-center align-items-center"
+                  >
+                    45
+                  </div>
+                  <div
+                    class="size-num d-flex justify-content-center align-items-center"
+                  >
+                    46
+                  </div>
+                  <div
+                    class="size-num d-flex justify-content-center align-items-center"
+                  >
+                    47
+                  </div>
+                </div>
+              </div>
+
+              <!-- category -->
+              <div class="category-in-listing mt-4">
+                <div class="d-flex justify-content-between">
+                  <h6 class="refined-by">CATEGORY</h6>
+                  <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="mt-3 d-flex flex-column gap-2">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label checkbox-label"
+                      for="flexCheckDefault"
+                    >
+                      Casual shoes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label checkbox-label"
+                      for="flexCheckDefault"
+                    >
+                      Runners
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label checkbox-label"
+                      for="flexCheckDefault"
+                    >
+                      Hiking
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label checkbox-label"
+                      for="flexCheckDefault"
+                    >
+                      Sneaker
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label checkbox-label"
+                      for="flexCheckDefault"
+                    >
+                      Basketball
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label checkbox-label"
+                      for="flexCheckDefault"
+                    >
+                      Golf
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label checkbox-label"
+                      for="flexCheckDefault"
+                    >
+                      Outdoor
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- gender -->
+              <div class="category-in-listing mt-4">
+                <div class="d-flex justify-content-between">
+                  <h6 class="refined-by">GENDER</h6>
+                  <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="mt-3 d-flex flex-column gap-2">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label checkbox-label"
+                      for="flexCheckDefault"
+                    >
+                      Men
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label checkbox-label"
+                      for="flexCheckDefault"
+                    >
+                      Women
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- Price -->
+              <div class="price-listing mt-4">
+                <div class="d-flex justify-content-between">
+                  <h6 class="refined-by">PRICE</h6>
+                  <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="range-toggler mt-3">
+                  <input
+                    type="range"
+                    class="form-range"
+                    min="0"
+                    max="1000"
+                    step="25"
+                    id="customRange3"
+                  />
+                  <div class="value-labels d-flex justify-content-between">
+                    <span>$0</span>
+                    <span>$1000</span>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="col-lg-9">
+            <!-- Cards -->
+            <div
+              class="shop-cards d-flex gap-3 row-gap-2 row-gap-md-5 flex-wrap justify-content-evenly justify-content-lg-between"
+            >
+              <!-- Card -->
+              <div class="shop-card">
+                <div class="img-box">
+                  <img
+                    class="newDraop img-fluid"
+                    src="./assets/images/newDraop2.png"
+                    alt="newDraop"
+                  />
+                  <p class="img-tag">New</p>
+                </div>
+                <h5>ULTRABOOST 1.0 MIAMI Green</h5>
+                <button class="btn">
+                  View Product - <span class="btn-price">$125</span>
+                </button>
+              </div>
+              <!-- Card end -->
+
+              <!-- Card -->
+              <div class="shop-card">
+                <div class="img-box">
+                  <img
+                    class="newDraop img-fluid"
+                    src="./assets/images/newDraop3.png"
+                    alt="newDraop"
+                  />
+                  <p class="img-tag">New</p>
+                </div>
+                <h5>ADIDAS OZELIA SHOES Green</h5>
+                <button class="btn">
+                  View Product - <span class="btn-price">$125</span>
+                </button>
+              </div>
+              <!-- Card end -->
+
+              <!-- Card -->
+              <div class="shop-card">
+                <div class="img-box">
+                  <img
+                    class="newDraop img-fluid"
+                    src="./assets/images/newDraop4.png"
+                    alt="newDraop"
+                  />
+                  <p class="img-tag-discount">20% off</p>
+                </div>
+                <h5>ADIDAS 4DFWD 2 RUNNING SHOES</h5>
+                <button class="btn">
+                  View Product - <span class="btn-price">$125</span>
+                </button>
+              </div>
+              <!-- Card end -->
+
+              <!-- Card -->
+              <div class="shop-card">
+                <div class="img-box">
+                  <img
+                    class="newDraop img-fluid"
+                    src="./assets/images/list-img-4.png"
+                    alt="newDraop"
+                  />
+                  <p class="img-tag">New</p>
+                </div>
+                <h5>ULTRABOOST 1.0 MIAMI Green</h5>
+                <button class="btn">
+                  View Product - <span class="btn-price">$125</span>
+                </button>
+              </div>
+              <!-- Card end -->
+
+              <!-- Card -->
+              <div class="shop-card">
+                <div class="img-box">
+                  <img
+                    class="newDraop img-fluid"
+                    src="./assets/images/list-img-5.png"
+                    alt="newDraop"
+                  />
+                  <p class="img-tag-discount">20% off</p>
+                </div>
+                <h5>ADIDAS OZELIA SHOES Green</h5>
+                <button class="btn">
+                  View Product - <span class="btn-price">$125</span>
+                </button>
+              </div>
+              <!-- Card end -->
+
+              <!-- Card -->
+              <div class="shop-card">
+                <div class="img-box">
+                  <img
+                    class="newDraop img-fluid"
+                    src="./assets/images/list-img-6.png"
+                    alt="newDraop"
+                  />
+                  <p class="img-tag">New</p>
+                </div>
+                <h5>ADIDAS 4DFWD 2 RUNNING SHOES</h5>
+                <button class="btn">
+                  View Product - <span class="btn-price">$125</span>
+                </button>
+              </div>
+              <!-- Card end -->
+
+              <!-- Card -->
+              <div class="shop-card">
+                <div class="img-box">
+                  <img
+                    class="newDraop img-fluid"
+                    src="./assets/images/list-img-7.png"
+                    alt="newDraop"
+                  />
+                  <p class="img-tag">New</p>
+                </div>
+                <h5>ULTRABOOST 1.0 MIAMI Green</h5>
+                <button class="btn">
+                  View Product - <span class="btn-price">$125</span>
+                </button>
+              </div>
+              <!-- Card end -->
+
+              <!-- Card -->
+              <div class="shop-card">
+                <div class="img-box">
+                  <img
+                    class="newDraop img-fluid"
+                    src="./assets/images/list-img-8.png"
+                    alt="newDraop"
+                  />
+                  <p class="img-tag">New</p>
+                </div>
+                <h5>ADIDAS OZELIA SHOES Green</h5>
+                <button class="btn">
+                  View Product - <span class="btn-price">$125</span>
+                </button>
+              </div>
+              <!-- Card end -->
+
+              <!-- Card -->
+              <div class="shop-card">
+                <div class="img-box">
+                  <img
+                    class="newDraop img-fluid"
+                    src="./assets/images/list-img-9.png"
+                    alt="newDraop"
+                  />
+                  <p class="img-tag">New</p>
+                </div>
+                <h5>ADIDAS 4DFWD 2 RUNNING SHOES</h5>
+                <button class="btn">
+                  View Product - <span class="btn-price">$125</span>
+                </button>
+              </div>
+              <!-- Card end -->
+            </div>
+            <!-- Cards -->
+            <!-- Pagination -->
+            <nav aria-label="Page navigation">
+              <ul class="pagination justify-content-center mt-5 gap-3">
+                <li class="page-item">
+                  <a class="page-link pagination-button"
+                    ><i class="fa-solid fa-angle-left"></i>
+                    <span class="d-none d-md-inline">Previous</span></a
+                  >
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item d-none d-md-inline">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item d-none d-md-inline">
+                  <a class="page-link" href="#">4</a>
+                </li>
+                ...
+                <li class="page-item"><a class="page-link" href="#">10</a></li>
+                <li class="page-item">
+                  <a class="page-link pagination-button" href="#"
+                    ><span class="d-none d-md-inline">Next</span>
+                    <i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- New Drops end -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-xxl footer-background">
+        <!-- Footer top -->
+
+        <div class="foot-top">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-6 d-flex flex-column ps-2 ps-md-5 text-left">
+              <div class="foot-top-text">
+                <h3>
+                  Join our KicksPlus <br />
+                  Club & get 15%
+                </h3>
+                <p>Sign up for free! Join the community.</p>
+                <form class="d-flex footer-form gap-2" action="">
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Email address"
+                  />
+                  <button class="btn">SUBMIT</button>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="foot-add">
+                <img
+                  class="img-fluid foot-add-img"
+                  src="./assets/images/footerFormImage.png"
+                  alt="logo"
+                />
+                <a class="plus-icon" href=""
+                  ><i class="fa-solid fa-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer bottom -->
+
+        <div class="footer-bottom">
+          <div
+            class="foot-bottom-content d-flex flex-column flex-md-row justify-content-between"
+          >
+            <div class="">
+              <h4>About us</h4>
+              <p>
+                We are the biggest hyperstore in the universe. We got you all
+                cover with our exclusive collections and latest drops.
+              </p>
+            </div>
+            <div class="foot-category">
+              <h5>Categories</h5>
+              <ul class="footer-links">
+                <li class="foot-item">
+                  <a class="foot-link" href="">Runners</a>
+                </li>
+                <li class="foot-item">
+                  <a class="foot-link" href="">Sneakers</a>
+                </li>
+                <li class="foot-item">
+                  <a class="foot-link" href="">Basketball</a>
+                </li>
+                <li class="foot-item">
+                  <a class="foot-link" href="">Outdoor</a>
+                </li>
+                <li class="foot-item"><a class="foot-link" href="">Golf</a></li>
+                <li class="foot-item">
+                  <a class="foot-link" href="">Hiking</a>
+                </li>
+              </ul>
+            </div>
+            <div class="foot-about">
+              <h5>Company</h5>
+              <ul class="footer-links">
+                <li class="foot-item">
+                  <a class="foot-link" href="">About</a>
+                </li>
+                <li class="foot-item">
+                  <a class="foot-link" href="">Contact</a>
+                </li>
+                <li class="foot-item">
+                  <a class="foot-link" href="">Blogs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="foot-follow">
+              <h5>Follow us</h5>
+              <div class="d-flex gap-3">
+                <a class="foot-link" href=""
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a class="foot-link" href=""
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a class="foot-link" href=""
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- foot main image -->
+          <div class="d-flex justify-content-center mt-0 mt-md-4">
+            <img
+              class="footer-main-img img-fluid"
+              src="./assets/images/footerImage.png"
+              alt="footer-img"
+            />
+          </div>
+        </div>
+        <!-- footer bottom end -->
+        <div class="copyright">
+          <p>
+            © All rights reserved | Made with ❤️ by <span> Arghadeep Roy</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

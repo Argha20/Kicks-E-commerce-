@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* color */
+  --color-blue: rgba(74, 105, 226, 1);
+  --color-yellow: rgba(255, 165, 47, 1);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-fa-white: rgba(250, 250, 250, 1);
+  --color-grey: rgba(231, 231, 227, 1);
+  --color-grey-main: rgba(112, 112, 110, 1);
+  --color-dark-grey: rgba(35, 35, 33, 1);
+
+  /* font */
+  --font-rubik: "Rubik", sans-serif;
+  --font-openSans: "Open Sans", sans-serif;
+}
+/* banner */
+.listing-main {
+  background-image: url("../images/listing-banner.png");
+  background-position-x: 109px;
+  background-position-y: -369px;
+  background-size: 1476px;
+  width: 100%;
+  height: 395px;
+  border-radius: 48px;
+  position: relative;
+  margin-top: 64px;
+}
+.top-text {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32.68px;
+  color: var(--color-grey);
+}
+.discount-text {
+  font-family: var(--font-rubik);
+  font-size: 74px;
+  font-weight: 600;
+  line-height: 87.69px;
+  color: var(--color-white);
+}
+.bottom-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.24px;
+  text-align: left;
+  color: var(--color-grey);
+  width: 490px;
+}
+.life-style-head {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42.66px;
+  color: var(--color-dark-grey);
+}
+.items-count {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.79px;
+  opacity: 0.7;
+}
+.trending-box {
+  width: 184px;
+  height: 56px;
+  gap: 16px;
+  border-radius: 16px;
+  background-color: rgba(244, 242, 242, 1);
+  font-family: var(--font-rubik);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18.96px;
+  color: var(--color-dark-grey);
+  text-transform: uppercase;
+}
+.trending-box a {
+  color: var(--color-dark-grey);
+}
+
+/* side pannel */
+.filter-head {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.44px;
+  color: var(--color-dark-grey);
+  margin-bottom: 19px;
+}
+.refined-by,
+.fa-angle-up {
+  font-family: var(--font-rubik);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.selected-filter {
+  width: 63px;
+  height: 38px;
+  gap: 10px;
+  border-radius: 12px;
+  background-color: var(--color-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-rubik);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.22px;
+  color: var(--color-white);
+}
+.size-container-in-listing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13.5px;
+}
+.form-check-input[type="checkbox"] {
+  border-radius: 2.75px;
+  box-shadow: none;
+}
+.form-check-input {
+  border: 2px solid var(--color-dark-grey) !important;
+  --bs-form-check-bg: transparent;
+}
+.form-check-input:checked {
+  background-color: var(--color-blue);
+}
+.form-check-label {
+  font-family: var(--font-openSans);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.79px;
+  margin-left: 12px;
+}
+/* range */
+.form-range {
+  border-radius: 5px;
+}
+.form-range::-webkit-slider-runnable-track {
+  background-color: black !important;
+  height: 4px;
+}
+.form-range::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  background: var(--color-blue);
+  box-shadow: none !important;
+}
+.value-labels span {
+  font-family: var(--font-openSans);
+  color: var(--color-dark-grey);
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.8;
+  line-height: 19.07px;
+}
+/* Pagination */
+
+.page-link {
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid var(--color-dark-grey);
+  color: var(--color-dark-grey);
+  font-family: var(--font-openSans);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  padding-inline: 18px;
+}
+.page-link.active,
+.page-link:hover,
+.page-link:focus {
+  background-color: var(--color-dark-grey);
+  border-color: var(--color-dark-grey);
+  color: var(--color-white);
+  box-shadow: none;
+}
+
+/* side pannel end */
+/* banner end */
